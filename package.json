@@ -1,0 +1,26 @@
+{
+  "name": "sat-api-express",
+  "version": "1.0.0",
+  "description": "An express implementation of sat-api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sat-utils/sat-api-express.git"
+  },
+  "author": "Alireza J (scisco)",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/sat-utils/sat-api-express/issues"
+  },
+  "homepage": "https://github.com/sat-utils/sat-api-express#readme",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "compression": "^1.6.1",
+    "envloader": "0.0.3",
+    "express": "^4.13.4",
+    "sat-api-lib": "^0.1.0"
+  }
+}
