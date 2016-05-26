@@ -9,3 +9,5 @@ Make sure you have an instance of Elasticsearch running. To populate it with Lan
     $ npm install
     $ node index.js
 
+### About
+Sat API Express was made by [Development Seed](http://developmentseed.org).
