@@ -18,6 +18,7 @@ var search = function (action, req, res) {
 /*----------------------------------
 // START MIDDLEWARES
 ----------------------------------*/
+app.use(cors());
 app.use(compression())
 app.use(bodyParser.json({ type: 'application/json' })); // for parsing application/json
 app.use(function(err, req, res, next) {
