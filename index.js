@@ -1,5 +1,6 @@
 require("envloader").load();
 var express = require('express');
+var cors = require('cors');
 var bodyParser = require('body-parser');
 var compression = require('compression');
 var api = require('sat-api-lib');
