@@ -1,5 +1,7 @@
 ## sat-api-express
 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
 This is an express implementation of sat-api.
 
 ### Installation
