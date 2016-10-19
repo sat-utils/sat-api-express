@@ -10,9 +10,9 @@ var search = function (action, req, res) {
   var s = new api(req);
   s[action](function (err, resp) {
     if (err) {
-      res.status(400).send({details: err});
+      return res.status(400).send({details: err.message});
     }
-    res.send(resp);
+    return res.send(resp);
   });
 };
 
@@ -55,6 +55,10 @@ app.get('/geojson', function(req, res) {
 
 app.post('/geojson', function(req, res) {
   search('geojson', {query: req.body}, res);
+});
+
+app.get('/health', function(req, res) {
+  search('health', req, res);
 });
 /*----------------------------------
 // END ENDPOINTS
