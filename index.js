@@ -45,6 +45,22 @@ app.post('/', function (req, res) {
   search('simple', {query: req.body}, res);
 });
 
+app.get('/landsat', function(req, res) {
+  search('landsat', req, res);
+});
+
+app.post('/landsat', function (req, res) {
+  search('landast', {query: req.body}, res);
+});
+
+app.get('/sentinel', function(req, res) {
+  search('sentinel', req, res);
+});
+
+app.post('/sentinel', function (req, res) {
+  search('sentinel', {query: req.body}, res);
+});
+
 app.get('/count', function(req, res) {
   search('count', req, res);
 });
