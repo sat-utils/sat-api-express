@@ -34,7 +34,7 @@ jobs:
 
       - add_ssh_keys:
           fingerprints:
-            - ""
+            - "16:59:6f:13:5e:ee:14:56:c4:3b:ac:02:6f:2c:9e:b9"
 
       - run:
           name: Deploy Documentation to GH Pages
