@@ -43,7 +43,7 @@ app.use(function(err, req, res, next) {
  * @apiName /
  * @apiGroup search
  * @apiDescription Primary search functionality. Parameters listed are shared across satellites (Landsat-8 and Sentinel-2).
- * Satellite specific parameters can be searched on the in the same fashion (exact match).
+ * Satellite specific parameters can be searched on via exact match like `path=30`.
  *
  * @apiParam {Number} limit=1 Limit of results to return.
  * @apiParam {Number} skip=0 Results to skip in return.
@@ -54,6 +54,8 @@ app.use(function(err, req, res, next) {
  * @apiParam {String} scene_id Performs exact search on sceneID field.
  * @apiParam {Number} cloud_from The lower limit for cloud_coverage field.
  * @apiParam {Number} cloud_to The upper limit for cloud_coverage field.
+ * @apiParam {Number} date_from The lower limit for date field.
+ * @apiParam {Number} date_to The upper limit for date field.
  *
  * @apiSuccess {Object} meta Metadata about the search endpoint.
  * @apiSuccess {Number} meta.found Total number of results returned from this query.
