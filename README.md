@@ -11,5 +11,16 @@ Make sure you have an instance of Elasticsearch running. To populate it with Lan
     $ npm install
     $ node index.js
 
+### Documentation
+
+Documentation can be found at http://docs.sat-utils.org/.
+
+It is generated from this repo using [`apidoc`](https://www.npmjs.com/package/apidoc):
+
+```bash
+apidoc -i app/ -o apidoc/
+```
+
+
 ### About
 Sat API Express was made by [Development Seed](http://developmentseed.org).
